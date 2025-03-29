@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Catamaran;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    background-image: url('elements/movies/peaky-blinders.jpg');
+    opacity: 90%;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 85px;
+    margin-top: 180px;
+    font-weight: 500;
+}
+
+header p {
+    font-size: 20px;
+    margin: 0.5rem 0;
+}
+
+header a.cta {
+    background-color: #fff;
+    border: 1px solid #333;
+    color: #333;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 60px;
+    margin-top: 1rem;
+    transition: all 0.2s;
+    width: 15%;
+}
+
+header a.cta:hover {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 5px 3%;
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    color: #E6E6FA;
+    margin: 0 1rem;
+    margin-top: 1.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color:crimson;
+}
+
+nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 5%;
+    background: #000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-bottom: -10px;
+    transition: padding 1s;
+}
+
+nav.sticky ul {
+    width: auto;
+}
+
+.logo-sticky {
+    max-width: 80px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.head2 {
+    font-family: Catamaran;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.para2, .para3 {
+    font-weight: 500;
+}
+
+.para2 a {
+    color:#007bff;
+}
+
+.para2 a:visited {
+    color: blueviolet;
+}
+
+.para2 a:hover {
+    color:lightsalmon;
+}
+
+.tile {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tile img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.tile-content {
+    flex-grow: 1;
+}
+
+.tile-content a {
+    transition: font-size 0.3s ease;
+}
+
+.tile-content a:hover {
+    color: crimson;
+    font-size: 110%;
+}
+
+.tile h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tile p {
+    margin-bottom: 10px;
+}
+
+.tile a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.tile a:hover {
+    text-decoration: underline;
+}
+
+#endpara {
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #00137e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}

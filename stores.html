@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="stores.css">
+    <title>Web Stores - Media Mart</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="elements/png/logo-white-removebg-preview.png" alt="Company Logo" class="logo" id="logo">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#stores">Stores</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Web Stores</h1>
+        <p>Welcome to our all-in-one online marketplace, where endless products and stores await ! <br>
+            Discover a variety of products and sellers, including in-app purchase stores. Shop conveniently in one place, finding trendy apparel,<br>digital downloads, and global finds. Experience the excitement of endless possibilities at your fingertips.</p>
+        <a href="#stores" class="cta">Explore</a>
+    </header>
+
+    <main>
+        <section id="stores">
+            <div class="container">
+                <br><br><br>
+                <h2 class="head2">Available Stores</h2>
+                <p class="para2">Stores including categories such as Shopping, Fashion, Fitness, In-app purchases, and more...</p>
+                <br>
+                <div class="tile">
+                    <img src="elements/web-stores/Daraz-Logo.jpg" alt="Daraz">
+                    <div class="tile-content">
+                        <h3>Daraz LK</h3>
+                        <p>Category: Shopping<br>
+                            Region: Sri Lanka<br>
+                            Description: The premium online shopping site in Sri Lanka. Shop for trendy Clothes, Mobiles, Electronics & many more with great prices all across Sri Lanka.<br>
+                        <a href="https://www.daraz.lk/" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/aliexpress-1080x1080.jpg" alt="AliExpress">
+                    <div class="tile-content">
+                        <h3>AliExpress</h3>
+                        <p>Category: Shopping<br>
+                            Region: Global<br>
+                            Description: AliExpress is the e-commerce retail platform of Alibaba, serving buyers from all over the world.<br>
+                        <a href="https://www.aliexpress.com" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/codashop.png" alt="Codashop">
+                    <div class="tile-content">
+                        <h3>Codashop</h3>
+                        <p>Category: In-app purchase<br>
+                            Region: Sri Lanka (Global Available)<br>
+                            Description: Codashop is the platform of choice for millions of users around the world who want to purchase digital content quickly, safely, and conveniently.<br>
+                        <a href="https://www.codashop.com/en-lk/" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/codm-webstore_178x178.jpg" alt="CODM Web Store">
+                    <div class="tile-content">
+                        <h3>COD:M Web Store</h3>
+                        <p>Category: In-app purchase<br>
+                            Region: Sri Lanka (Global Available)<br>
+                            Description: Gamers around the world count on the COD:M Store for a seamless purchase experience when buying COD Points - No registration or log-in is required, and purchases are added to your game account instantly.<br>
+                        <a href="https://store.callofdutymobile.com/en-lk/" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/nolimit_logo.jpeg" alt="Nolimit">
+                    <div class="tile-content">
+                        <h3>NOLIMIT</h3>
+                        <p>Category: Fashion<br>
+                            Region: Sri Lanka<br>
+                            Description: NOLIMIT, retail chain takes pride in its Sri Lankan roots but offers a world-class retail experience that drives customer loyalty while simultaneously ...<br>
+                        <a href="https://www.nolimit.lk" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/SUPPLEMENT-WAREHOUSE-LOGO-03.jpg" alt="Supplement Warehouse">
+                    <div class="tile-content">
+                        <h3>Supplement Warehouse</h3>
+                        <p>Category: Fitness<br>
+                            Region: Sri Lanka<br>
+                            Description: Are you looking to buy the latest protein products? You're at the right place. We offer the latest products at best quality, best price.<br>Visit us now !<br>
+                        <a href="https://supplementwarehouse.lk" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/web-stores/whey-protein.jpg" alt="Edge Nutrition">
+                    <div class="tile-content">
+                        <h3>Edge Nutrition</h3>
+                        <p>Category: Fitness<br>
+                            Region: Sri Lanka<br>
+                            Description: MUSCLE EDGE provides the body with the necessary nutrients to build muscle tissue. It functions as an immune system builder and greatly enhances hormonal and cellular responses.<br>
+                        <a href="https://www.edgenutrition.life" target="_blank">Open Website</a></p>
+                    </div>
+                </div>
+            </div>
+            <p id="endpara">Stay Tuned for More Stores ...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Media Mart. Developed and Designed by Niki.</p>
+    </footer>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        var logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+                logo.classList.add("logo-sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+                logo.classList.remove("logo-sticky");
+            }
+        };
+    </script>
+</body>
+</html>

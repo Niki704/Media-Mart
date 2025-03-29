@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="movies.css">
+    <title>Movies - Media Mart</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="elements/png/logo-white-removebg-preview.png" alt="Company Logo" class="logo" id="logo">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Movies</h1>
+        <p>Step into the world of cinema with our comprehensive movie hub ! <br>
+            Stay updated on the latest releases, trailers, reviews, and embark on cinematic journeys right from the comfort of your screen.</p>
+        <a href="#downloads" class="cta">Explore</a>
+    </header>
+
+    <main>
+        <section id="downloads">
+            <div class="container">
+                <br><br><br>
+                <h2 class="head2">Available Downloads</h2>
+                <p class="para2">Find and discover interesting links from <a href="https://yts.mx" target="_blank">YTS</a>, <a href="https://baiscopedownloads.co" target="_blank">Baiscope Downloads</a>, <a href="https://www.1337x.tw" target="_blank">1337 Site</a>, and more...</p>
+                <br>
+                <div class="tile">
+                    <img src="elements/movies/conjuring-1-medium-cover.jpg" alt="Conjuring 1">
+                    <div class="tile-content">
+                        <h3>The Conjuring (2013)</h3>
+                        <p>IMDb: 7.5/10<br>
+                            Category: Action, Horror, Mystery, Thriller<br>
+                            Available Copies: 720p.BlueRay / 1080p.BlueRay / 2160p.WEBDL<br>
+                            Clicks: <span id="movie1ClickCount">0</span></p>
+                        <a href="https://yts.mx/movies/the-conjuring-2013" target="_blank" onclick="movie1IncrementCounter()">Download</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/movies/traintobusanmedium-cover.jpg" alt="Train to Busan">
+                    <div class="tile-content">
+                        <h3>Train to Busan (2016)</h3>
+                        <p>IMDb: 7.6/10<br>
+                            Category: Action, Drama, Horror, Thriller<br>
+                            Available Copies: 720p.BlueRay / 1080p.BlueRay / 2160p.WEBDL<br>
+                            Clicks: <span id="movie2ClickCount">0</span></p>
+                        <a href="https://yts.mx/movies/train-to-busan-2016" target="_blank" onclick="movie2IncrementCounter()">Download</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/movies/annabelle-medium-cover.jpg" alt="Annabelle">
+                    <div class="tile-content">
+                        <h3>Annabelle (2014)</h3>
+                        <p>IMDb: 5.4/10<br>
+                            Category: Action, Horror, Mystery, Thriller<br>
+                            Available Copies: 720p.BlueRay / 1080p.BlueRay / 2160p.WEBDL<br>
+                            Clicks: <span id="movie3ClickCount">0</span></p>
+                        <a href="https://yts.mx/movies/annabelle-2014" target="_blank" onclick="movie3IncrementCounter()">Download</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/movies/peaky-blinders-portrait.jpg" alt="Peaky Blinders S1">
+                    <div class="tile-content">
+                        <h3>Peaky Blinders S1 (Complete Season)</h3>
+                        <p>IMDb: 8.8/10<br>
+                            Category: Historical drama, Crime drama<br>
+                            Available Copies: 720p.BlueRay<br>
+                            Clicks: <span id="movie4ClickCount">0</span></p>
+                        <a href="https://baiscopedownloads.co/peaky-blinders-s01-complete-season/" target="_blank" onclick="movie4IncrementCounter()">Download</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/movies/pirates-of-the-caribbean.jpg" alt="Pirates Of The Caribbean">
+                    <div class="tile-content">
+                        <h3>Pirates of the Caribbean: The Curse of the Black Pearl (2003)</h3>
+                        <p>IMDb: 8.1/10<br>
+                            Category: Action, Adventure, Fantacy<br>
+                            Available Copies: 1080p.BlueRay<br>
+                            Clicks: <span id="movie5ClickCount">0</span></p>
+                        <a href="https://www.1337x.to/torrent/498359/Pirates-of-the-Caribbean-The-Curse-of-the-Black-Pearl-2003-1080p-BrRip-x264-YIFY/" target="_blank" onclick="movie5IncrementCounter()">Download</a>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/movies/ala-vaikunthapurramuloo.jpg" alt="Ala Vaikunthapurramuloo">
+                    <div class="tile-content">
+                        <h3>Ala Vaikunthapurramuloo (2020)</h3>
+                        <p>IMDb: 7.3/10<br>
+                            Category: Telugu, Action, Drama<br>
+                            Available Copies: 720p.WEBDL<br>
+                            Clicks: <span id="movie6ClickCount">0</span></p>
+                        <a href="https://sinhalasub.life/links/io6u14vbvr/" target="_blank" onclick="movie6IncrementCounter()">Download</a>
+                    </div>
+                </div>
+            </div>
+            <p id="endpara">Stay Tuned for Upcoming Releases ...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Media Mart. Developed and Designed by Niki.</p>
+    </footer>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        var logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+                logo.classList.add("logo-sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+                logo.classList.remove("logo-sticky");
+            }
+        };
+
+        let movie1ClickCount = 0;
+        let movie2ClickCount = 0;
+        let movie3ClickCount = 0;
+        let movie4ClickCount = 0;
+        let movie5ClickCount = 0;
+        let movie6ClickCount = 0;
+
+        function movie1IncrementCounter() {
+            movie1ClickCount++;
+            document.getElementById('movie1ClickCount').textContent = movie1ClickCount;
+        }
+
+        function movie2IncrementCounter() {
+            movie2ClickCount++;
+            document.getElementById('movie2ClickCount').textContent = movie2ClickCount;
+        }
+
+        function movie3IncrementCounter() {
+            movie3ClickCount++;
+            document.getElementById('movie3ClickCount').textContent = movie3ClickCount;
+        }
+
+        function movie4IncrementCounter() {
+            movie4ClickCount++;
+            document.getElementById('movie4ClickCount').textContent = movie4ClickCount;
+        }
+
+        function movie5IncrementCounter() {
+            movie5ClickCount++;
+            document.getElementById('movie5ClickCount').textContent = movie5ClickCount;
+        }
+
+        function movie6IncrementCounter() {
+            movie6ClickCount++;
+            document.getElementById('movie6ClickCount').textContent = movie6ClickCount;
+        }
+    </script>
+</body>
+</html>

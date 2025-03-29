@@ -1,0 +1,241 @@
+<!--
+<?php
+session_start();
+
+$_SESSION["username"] = "Niki";
+
+//unset($_SESSION["username"]);
+//session_unset();
+
+//session_destroy();
+?>
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Media Mart</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="elements/png/logo-white-removebg-preview.png" alt="Company Logo" class="logo" id="logo">
+            <ul id="menu">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Media Mart</h1>
+        <p>Our website is a leading aggregator of resourses which includes links of <br>
+            various categories in various websites</p>
+        <a href="#tile-menu" class="cta">Explore</a>
+    </header>
+    <main>
+        <section id="tile-menu">
+            <br><br><br>
+            <h2>Categories</h2>
+            <div class="tile">
+                <a href="games.html" target="_self" onclick="gameIncrementCounter()">
+                    <img src="elements/gaming/background.jpg" alt="Games" width="400px" height="250px">
+                    <h3>Games</h3>
+                    <p>Total Clicks: <span id="gameClickCount">0</span></p>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="movies.html" target="_self" onclick="movieIncrementCounter()">
+                    <img src="elements/movies/peaky-blinders.jpg" alt="Movies" width="400px" height="250px">
+                    <h3>Movies</h3>
+                    <p>Total Clicks: <span id="movieClickCount">0</span></p>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="apk.html" target="_self" onclick="apkIncrementCounter()">
+                    <img src="elements/apk/2022-playerunknown-s-battlegrounds-gaming.jpg" alt="Apk" width="400px" height="250px">
+                    <h3>APKs</h3>
+                    <p>Total Clicks: <span id="apkClickCount">0</span></p>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="news.html" target="_self" onclick="newsIncrementCounter()">
+                    <img src="elements/news/background.jpg" alt="News" width="400px" height="250px">
+                    <h3>News</h3>
+                    <p>Total Clicks: <span id="newsClickCount">0</span></p>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="stores.html" target="_self" onclick="storeIncrementCounter()">
+                    <img src="elements/web-stores/pexels-antoni-shkraba-6207736.jpg" alt="News" width="400px" height="250px">
+                    <h3>Web Stores</h3>
+                    <p>Total Clicks: <span id="storeClickCount">0</span></p>
+                </a>
+            </div>
+            <div class="tile">
+                <a href="playlists.html" target="_self" onclick="playlistIncrementCounter()">
+                    <img src="elements/playlists/pexels-ivan-samkov-4162581.jpg" alt="News" width="400px" height="250px">
+                    <h3>Music Playlists</h3>
+                    <p>Total Clicks: <span id="playlistClickCount">0</span></p>
+                </a>
+            </div>
+        </section>
+        <section id="services">
+            <br><br><br>
+            <h2>Our Services</h2>
+            <div class="service">
+                <img src="elements/Website-Link-Aggregation(3).jpg" alt="Comprehensive Link Aggregation">
+                <h3>Comprehensive Link Aggregation</h3>
+                <p> Gain access to a vast array of links spanning six diverse categories, including games, movies, APKs, news, web stores, and music playlists. Our meticulously organized platform ensures easy navigation and quick access to the content you desire, all neatly categorized for your convenience.</p>
+            </div>
+            <div class="service">
+                <img src="elements/Interactive-User-Engagement.jpg" alt="Interactive User Engagement">
+                <h3>Interactive User Engagement</h3>
+                <p>Engage with fellow users through our interactive comment section, where you can share thoughts, recommendations, and insights on the content you explore. Join a vibrant community of like-minded enthusiasts, fostering discussions and connections within your favorite categories.</p>
+            </div>
+            <div class="service">
+                <img src="elements/Personalized-User-Experience.jpg" alt="Personalized User Experience">
+                <h3>Personalized User Experience</h3>
+                <p>Unlock the full potential of our platform by registering an account, granting you access to exclusive features tailored to your preferences. Customize your profile, save favorite links, and receive personalized recommendations based on your browsing history. With our intuitive navigation bar, effortlessly explore and switch between categories to discover new content at your fingertips.</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <br><br>
+            <h2>About Us</h2>
+            <p>Hello & Welcome to Media Mart ! At NIBM University, I'm a student who deeply engaged in programming and web designing. Through my diverse projects, I've developed a website catering to varied interests. Featuring six main categories—games, movies, APKs, news, web stores, and music playlists—our platform ensures easy navigation and user satisfaction.<br><br>
+
+            We prioritize user engagement with a dedicated comments section and offer seamless login and registration options for personalized experiences. Our intuitive navigation bar facilitates effortless exploration across categories.<br><br>
+                
+            Join us on this journey of discovery and innovation as we strive to create a vibrant community where every user can find their niche. Welcome to our platform—it's designed with you in mind.</p>
+            <img src="elements/About-us.jpg" width="100%" alt="About Us">
+        </section>
+
+        <section id="contact">
+            <h2>Get in Touch</h2>
+            <p>Get in touch with us today! Whether you have questions, need assistance, or want to explore collaboration opportunities, we're here to help. Reach out via email, phone, or our contact form below, and let's start the conversation.</p>
+            <form action="submit-form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
+                <button type="submit">Submit</button><br>
+                <button type="button" onclick="logout()">Log Out</button>
+            </form>
+        </section>
+        <!--
+        <section id="pageviews">
+            <p>Total Page Views: <span id="pageviews-count"></span></p>
+            <p>New Page Visits: <span id="visits-count"></span></p>
+        </section>
+        -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Media Mart. Developed and Designed by Niki.</p>
+    </footer>
+
+    <script>
+
+        //Sticky Nav Bar Functioning
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        var logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+                logo.classList.add("logo-sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+                logo.classList.remove("logo-sticky");
+            }
+        };
+
+        //Scrpting update realtime click count
+        function incrementCounter(category) {
+        // Retrieve the current click count from localStorage
+        let clickCount = parseInt(localStorage.getItem(`${category}ClickCount`)) || 0;
+
+        // Increment the click count
+        clickCount++;
+
+        // Update the click count in localStorage
+        localStorage.setItem(`${category}ClickCount`, clickCount);
+
+        // Update the displayed click count on the page
+        document.getElementById(`${category}ClickCount`).textContent = clickCount;
+        }
+
+        //Click Count Functioning
+        let gameClickCount = 0;
+        let movieClickCount = 0;
+        let apkClickCount = 0;
+        let newsClickCount = 0;
+        let storeClickCount = 0;
+        let playlistClickCount = 0;
+
+        function gameIncrementCounter() {
+            gameClickCount++;
+            document.getElementById('gameClickCount').textContent = gameClickCount;
+        }
+
+        function movieIncrementCounter() {
+            movieClickCount++;
+            document.getElementById('movieClickCount').textContent = movieClickCount;
+        }
+
+        function apkIncrementCounter() {
+            apkClickCount++;
+            document.getElementById('apkClickCount').textContent = apkClickCount;
+        }
+
+        function newsIncrementCounter() {
+            newsClickCount++;
+            document.getElementById('newsClickCount').textContent = newsClickCount;
+        }
+
+        function storeIncrementCounter() {
+            storeClickCount++;
+            document.getElementById('storeClickCount').textContent = storeClickCount;
+        }
+
+        function playlistIncrementCounter() {
+            playlistClickCount++;
+            document.getElementById('playlistClickCount').textContent = playlistClickCount;
+        }
+
+        //Page View Count Scripting
+        const pageviewscount = document.getElementById('pageviews-count');
+        const visitscount = document.getElementById('visits-count');
+        
+
+        if(sessionStorage.getItem('visit') === null) {
+            //New Visit and Page View
+            updateCounter('type=visit-pageview');
+        }
+        else {
+            //PageView
+            updateCounter('type=pageview');
+        }
+
+        function updateCounter(type) {
+            fetch('http://127.0.0.1:5500?'+type)
+            .then(res => res.json())
+            .then(data => {
+                pageviewscount.textContent = data.pageviews;
+                visitscount.textContent = data.visits;
+            })
+        }
+
+        sessionStorage.setItem('visit', 'x');
+
+        function logout() {
+            window.location.href = 'login.html';
+        }
+
+    </script>
+</body>
+</html>

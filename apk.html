@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="apk.css">
+    <title>APKs - Media Mart</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <img src="elements/png/logo-white-removebg-preview.png" alt="Company Logo" class="logo" id="logo">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#downloads">Downloads</a></li>
+                <li><a href="index.html">Services</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1>Android Application Packages</h1>
+        <p>Welcome to our APK hub, your ultimate destination for all things Android ! <br>
+            We bring you the latest and greatest in Android apps and utilities with essential tools to entertaining games, our platform is your<br>go-to resource for discovering, downloading, and exploring the best that the Android ecosystem has to offer.</p>
+        <a href="#downloads" class="cta">Explore</a>
+    </header>
+
+    <main>
+        <section id="downloads">
+            <div class="container">
+                <br><br><br>
+                <h2 class="head2">Available Downloads</h2>
+                <p class="para2">Find and discover interesting links from <a href="https://en.uptodown.com" target="_blank">Uptodown</a>, <a href="https://apkpure.net" target="_blank">APKPure</a>, <a href="https://www.apkmirror.com/" target="_blank">APK Mirror</a>, and more...</p>
+                <br>
+                <div class="tile">
+                    <img src="elements/apk/whatsapp.jpg" alt="Whatsapp">
+                    <div class="tile-content">
+                        <h3>Whatsapp Messenger</h3>
+                        <p>Version: 2.24.5.13<br>
+                            Provider: WhatsApp LLC<br>
+                            Size: 90.36MB<br>
+                            Last Update: 15 Feb 2024<br>
+                        <a href="https://whatsapp-messenger.en.uptodown.com/android/download" target="_blank">Download</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/apk/ps-cc-mod-apk_77d41.jpg" alt="PS CC">
+                    <div class="tile-content">
+                        <h3>Photoshop CC Mod (Premium)</h3>
+                        <p>Version: 2020.21.1.1.221<br>
+                            Provider: Mr Editx<br>
+                            Size: 23MB<br>
+                            Last Update: 22 May 2023<br>
+                        <a href="https://apkmodget.com/apps/ps-cc-mod-apk-1/" target="_blank">Download</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/apk/pubg-mobile-100x100.jpg" alt="Pubg Mobile">
+                    <div class="tile-content">
+                        <h3>PUBG Mobile</h3>
+                        <p>Version: 3.0.0<br>
+                            Provider: Tencent Games<br>
+                            Size: 1.3GB<br>
+                            Last Update: 28 Dec 2023<br>
+                        <a href="https://pubg-mobile.en.download.it/android" target="_blank">Download</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/apk/codm-100x100.jpg" alt="COD Mobile">
+                    <div class="tile-content">
+                        <h3>Call Of Duty: Mobile Season 2 (XAPK)</h3>
+                        <p>Version: 1.0.43<br>
+                            Provider: Activition Publishing, Inc.<br>
+                            Size: 2.6GB<br>
+                            Last Update: 26 Jan 2024<br>
+                        <a href="https://apkpure.net/call-of-duty-mobile-season-11/com.activision.callofduty.shooter" target="_blank">Download</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/apk/capcut.jpg" alt="CapCut">
+                    <div class="tile-content">
+                        <h3>CapCut Video Editor</h3>
+                        <p>Version: 11.1.0<br>
+                            Provider: Bytedance Pte. Ltd.<br>
+                            Size: 241.8MB<br>
+                            Last Update: 23 Feb 2024<br>
+                        <a href="https://apkpure.net/capcut-for-android/com.lemon.lvoverseas" target="_blank">Download</a></p>
+                    </div>
+                </div>
+                <div class="tile">
+                    <img src="elements/apk/netflix.png" alt="Netflix">
+                    <div class="tile-content">
+                        <h3>Netflix APK + MOD (Premium, 4K HDR, Region Unlocked)</h3>
+                        <p>Version: 8.104.0<br>
+                            Provider: Netflix, Inc.<br>
+                            Size: 68.96MB<br>
+                            Last Update: 17 Feb 2024<br>
+                        <a href="https://apkmody.io/apps/netflix" target="_blank">Download</a></p>
+                    </div>
+                </div>
+            </div>
+            <p id="endpara">Stay Tuned for Latest Apps ...</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Media Mart. Developed and Designed by Niki.</p>
+    </footer>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+        var logo = document.getElementById("logo");
+
+        window.onscroll = function() {
+            if(window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+                logo.classList.add("logo-sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+                logo.classList.remove("logo-sticky");
+            }
+        };
+    </script>
+</body>
+</html>
